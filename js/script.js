@@ -42,7 +42,7 @@ for(let i = 0; i < imgs.length; i++){
     carosello.appendChild(div)
 }
 
-// 5. mi metto in ascolta del click del btn prev
+// 5. mi metto in ascolto del click del btn prev
 document.getElementById('prev').addEventListener('click', function(){
     const activeImg = imgsEls[active];
     if(active > 0){
