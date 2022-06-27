@@ -2,7 +2,7 @@
 const imgs = ['img/06.jpg', 'img/07.jpg','img/08.jpg','img/09.jpg','img/10.jpg'];
 
 // 2. creo una variabile per ricordami l'immagine attiva
-let active = 0;
+let active = 3;
 const carosello = document.getElementById('carosello')
 
 // 3. creo costante per tenere gli elementi generati
@@ -26,7 +26,7 @@ for(let i = 0; i < imgs.length; i++){
         div.className = 'carousel-item'
     }
 
-    // 4.3 assegno le classi all'immagine creata alla riga 13
+    // 4.3 assegno le classi all'immagine creata alla riga 16
     img.className = 'd-block w-100'
 
     // 4.4 assegno la sorgente dell'immagine usando quella dell'array imgs
