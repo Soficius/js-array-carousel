@@ -42,4 +42,28 @@ for(let i = 0; i < imgs.length; i++){
     carosello.appendChild(div)
 }
 
+// 5. mi metto in ascolta del click del btn prev
+document.getElementById('prev').addEventListener('click', function(){
+    const activeImg = imgsEls[active];
+    if(active > 0){
+        active--
+    } else{
+        active = imgs.length - 1 
+    }
+    const newActiveImg = imgsEls[active];
+    activeImg.classList.remove('active');
+    newActiveImg.classList.add('active');
+})
 
+// 6.mi metto in ascolto del click del btn next
+document.getElementById('next').addEventListener('click', function(){
+    const activeImg = imgsEls[active];
+    if(active < imgs.length - 1 ){
+        active++
+    } else{
+        active = 0
+    }
+    const newActiveImg = imgsEls[active];
+    activeImg.classList.remove('active');
+    newActiveImg.classList.add('active');
+})
